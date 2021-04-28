@@ -1,0 +1,13 @@
+animation: left_to_right 3s ease-in backwards alternate infinite;
+
+
+
+@keyframes left_to_right {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(10%);
+  }
+  
+}

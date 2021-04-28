@@ -1,0 +1,26 @@
+.logos{
+    display: grid;
+    justify-items: center;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-column-gap: 50px;
+    grid-row-gap: 150px;
+    grid-template-columns: 100px 100px 100px;
+grid-template-rows: 100px 100px 100px;
+grid-auto-flow: row;
+}
+
+
+
+
+
+
+
+
+<div class="logos">
+    <img src="./c++.png" alt="c++ logo" height="70" width="70"><img src="./C_Logo.png" alt="c logo" height="70"
+        width="70">
+    <img src="./CSS-Logo.png" alt="css logo" height="70" width="150px"><img src="./html5.png" alt="html5 logo"
+        height="70" width="70">
+    <img src="./jslogo.png" alt="java script logo" height="70" width="70">
+</div>

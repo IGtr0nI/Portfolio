@@ -1,0 +1,158 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+body{
+    /* background-color: black; */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;    
+    background-color: #333333;
+    width: auto;
+  }
+  li {
+      display: flex;
+    float:left;
+  }
+  
+  li a {
+    display:block;
+    color: white;
+    text-align: center ;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color:black;
+  }
+
+.navbar{
+  position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+  z-index: 100;
+}
+
+.main{
+    clip-path: polygon(0 0 ,100% 0 , 100% 90%, 0 100%);
+    background: radial-gradient(#eddcd2ff, #fff1e6ff, #fde2e4ff, #fad2e1ff, #c5deddff, #dbe7e4ff, #f0efebff, #d6e2e9ff, #bcd4e6ff, #99c1deff);
+	background-size: 400% 400%;
+	-webkit-animation: gradient 10s ease infinite;
+	        animation: gradient 10s ease infinite;
+}
+
+.header{    
+    font-family: 'Raleway', sans-serif;
+    font-size: 2em;
+    justify-content: center;
+    align-content: center;
+    font-weight: bold;
+    display: flex;
+    padding: auto;
+    margin: auto;
+    width: auto;
+}
+
+.container{
+    color: black;
+    margin: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.name{ 
+    font-size: 2em;
+    color:black;
+}
+.icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.icons > *{  
+  background: rgb(236, 235, 235);
+  margin: 30px 30px;
+  padding: 15px 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border:5px solid rgb(177, 175, 175);
+  transition:border 0.5s ease 0s;
+}
+  .icons>*:hover{
+  border:15px solid rgb(255, 255, 255);
+  }
+
+
+
+.contact{
+  display: flex;
+  justify-content: flex-end;
+  }
+
+.contact>*{
+  padding: 20px 20px;
+}
+
+
+
+@-webkit-keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+@media (max-width: 767px) { 
+  .navbar{
+      display:none;
+  }
+}
+
+
+
